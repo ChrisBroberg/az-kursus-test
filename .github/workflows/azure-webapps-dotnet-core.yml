@@ -37,10 +37,10 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: 'Checkout GitHub Action'
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Setup DotNet ${{ env.DOTNET_VERSION }} Environment
-        uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v2
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
@@ -54,6 +54,6 @@ jobs:
         uses: Azure/functions-action@v1
         id: fa
         with:
-          app-name: 'azure-function-example-dev'          
+          app-name: 'chris1test'          
           package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
           publish-profile:  '${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}'
