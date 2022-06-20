@@ -10,9 +10,9 @@ using Newtonsoft.Json;
 
 namespace AzureKursusfunction
 {
-    public static class Function1
+    public static class FileUploadFunction
     {
-        [FunctionName("Function1")]
+        [FunctionName("FileUpload")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
