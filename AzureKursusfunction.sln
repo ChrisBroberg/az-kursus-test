@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureKursusfunction", "AzureKursusfunction\AzureKursusfunction.csproj", "{F70A25C0-098D-4C6C-8EF5-BDD2A557D7F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureKursusfunction", "AzureKursusfunction\AzureKursusfunction.csproj", "{F70A25C0-098D-4C6C-8EF5-BDD2A557D7F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7913575C-2002-42B8-9C5C-AFE1F6E052A8}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\azure-webapps-dotnet-core.yml = .github\workflows\azure-webapps-dotnet-core.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
